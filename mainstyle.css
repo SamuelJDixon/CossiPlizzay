@@ -1,0 +1,45 @@
+@charset "utf-8";
+body {
+	background-color: #FFFFFF;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 20.73%,rgba(0,235,255,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 20.73%,rgba(0,235,255,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 20.73%,rgba(0,235,255,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 20.73%,rgba(0,235,255,1.00) 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-clip: border-box;
+	background-attachment: fixed;
+	margin-top: 40px;
+}
+#navigation li {
+	font: 22px Arial;
+	display: inline-block;
+	list-style-type: none;
+}
+#navigation a {
+	padding: 5px 20px;
+	background-color: #09F;
+	color: #FFF;
+	text-decoration: none;
+}
+#navigation a:hover {
+	background-color: #f90;
+	color: #666;
+}
+.subnav {
+	display: none;
+}
+
+#navigation ul li:hover ul.subnav {
+	display: block;
+	position: absolute;
+	float: left;
+}
+#navigation ul li .subnav li {
+	display: block;
+	margin-left: -40px;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
